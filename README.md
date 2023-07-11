@@ -1,17 +1,40 @@
-# machine_learning_project-unsupervised-learning
+# Supervised Learning Project
 
-## Project Outcomes
-- Unsupervised Learning: perform unsupervised learning techniques on a wholesale data dataset. The project involves four main parts: exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and PCA.
-### Duration:
-Approximately 1 hour and 40 minutes
-### Project Description:
-In this project, we will apply unsupervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Project/Goals
 
-The data set for this project is the "Wholesale Data" dataset containing information about various products sold by a grocery store.
-The project will involve the following tasks:
+The core objective of this project is to apply unsupervised learning techniques to a wholesale data dataset. The project consists of four main components, including exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and principal component analysis (PCA). Through these steps, we aim to gain insights and discover patterns within the dataset, ultimately providing valuable information for decision-making and business optimization.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Unsupervised learning: We will use the Wholesale Data dataset to perform k-means clustering, hierarchical clustering, and principal component analysis (PCA) to identify patterns and group similar data points together. We will determine the optimal number of clusters and communicate the insights gained through data visualization.
+## Process
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+#### Step 1: EDA - Exploratory Data Analysis & Pre-processing
 
+Conduct an exploratory data analysis on the diabetes dataset. Choose the visualizations I want to use, and my analysis cover the following tasks mostly:
+
+- Data Import
+- Data Cleaning: Check the dataset for any missing or incorrect data and clean the dataset accordingly. Data Description: Generate summary statistics such as mean, median, and standard deviation for each column of the dataset. 
+- Data Visualization: Create various visualizations such as histograms, box plots, scatter plots, and heatmaps to understand the relationships and trends between the different variables in the dataset.
+- Outlier Detection
+- Correlation Analysis: Calculate the correlation between different variables in the dataset to determine which variables are highly correlated.
+- Data Transformation
+- Feature Selection
+
+#### Step 2: KMeans Clustering
+The objective of my analysis was to group similar products together into clusters based on their attributes such as fresh, milk, grocery, frozen, detergents_paper, and delicatessen. To perform the k-means clustering analysis, I pre-processed the dataset, determined the optimal number of clusters, initialized the centroids, assigned data points to clusters, updated the centroids, and repeated the process until convergence. This allowed me to effectively identify distinct groups within the dataset and gain insights into product segmentation.
+
+#### Step 3: Hierarchical Clustering 
+The analysis involved iteratively merging or splitting clusters based on a similarity measure until a dendrogram was formed.
+To perform the hierarchical clustering analysis, I pre-processed the dataset and determined the optimal number of clusters using techniques such as the dendrogram. This allowed me to effectively identify distinct clusters and understand the hierarchical relationships among the data points. By utilizing this approach, I gained valuable insights into the underlying structure of the wholesale dataset and the grouping of similar products based on their attributes.
+
+#### Step 4: PCA
+In this section, I performed principal component analysis (PCA) to draw conclusions about the underlying structure of the wholesale customer data. By applying PCA to the dataset, I aimed to identify the compound combinations of features that best describe customers, as PCA calculates the dimensions that maximize variance. Through this analysis, I gained insights into the most influential features and their contributions to customer segmentation, enabling a deeper understanding of the underlying patterns and characteristics within the wholesale data.
+
+## Conclusion
+Based on the exploratory data analysis (EDA) conducted on the wholesale customer dataset, the following findings can be summarized:
+
+- The distribution of the variables in the dataset is highly skewed, with a majority of the variables having a long tail on the right side. This indicates that there are a few customers who spend significantly more than the majority of customers in each product category.
+
+- There are strong positive correlations observed between the "Grocery" and "Detergents_Paper" variables, as well as between the "Milk" and "Grocery" variables. This suggests that customers who spend more on groceries also tend to spend more on detergents and customers who spend more on milk also tend to spend more on groceries.
+
+- The "Fresh" variable shows a relatively low correlation with the other variables, indicating that the spending on fresh products is not strongly associated with the spending on other product categories. This suggests that customers may have different preferences or needs when it comes to fresh products compared to other categories.
+
+- The majority of the customers in the dataset fall into the lower spending range, with a few customers spending significantly higher amounts in each product category. This indicates that there may be different segments of customers with varying purchasing behaviors, such as regular consumers with moderate spending and occasional high-spending customers.
