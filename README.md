@@ -1,4 +1,4 @@
-# Supervised Learning Project
+# Unsupervised Learning Project
 
 ## Project/Goals
 
